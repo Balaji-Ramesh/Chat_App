@@ -1,4 +1,4 @@
-# Realtime Chat Application
+## Realtime Chat Application
 
 Just a Chat App application
 
@@ -38,8 +38,9 @@ cd chat-app
 
 # 2. Install dependencies
 
-```bash
 For backend:
+
+```bash
 cd backend
 npm install
 ```
