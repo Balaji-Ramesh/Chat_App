@@ -74,7 +74,6 @@ const userLogin = async (req, res) => {
   const user = await User.findOne({
     email: parsed.data.email,
   });
-  console.log("Found user", user);
 
   if (!user) {
     return res.status(400).json({
@@ -86,7 +85,6 @@ const userLogin = async (req, res) => {
     parsed.data.password,
     user.password
   );
-  console.log("password match", comparePassword);
 
   if (!comparePassword) {
     return res.status(400).json({
